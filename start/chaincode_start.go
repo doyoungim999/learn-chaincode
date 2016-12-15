@@ -65,10 +65,10 @@ func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function strin
 
 	// Handle different functions
 	if function == "dummy_query" {											//read a variable
-		fmt.Println("hi there " + function)						//error
+		fmt.Println("[DOY] hi  there " + function)						//error
 		return nil, nil;
 	}
-	fmt.Println("query did not find func: " + function)						//error
+	fmt.Println("[DOY] query did not find func: " + function)						//error
 
 	return nil, errors.New("Received unknown function query: " + function)
 }
